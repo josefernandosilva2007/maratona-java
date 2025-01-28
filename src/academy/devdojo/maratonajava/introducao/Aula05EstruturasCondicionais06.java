@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Exercicio03 {
+public class Aula05EstruturasCondicionais06 {
     public static void main(String[] args) {
         int day = 1;
         String finalDeSemana = "Final de Semana";
@@ -32,6 +32,22 @@ public class Exercicio03 {
             default:
                 System.out.println("Invalido");
 
+        }
+        System.out.println(resultado);
+
+        //outra maneira de se fazer
+        switch (day){
+            case 1:
+            case 7:
+                resultado = finalDeSemana;
+                break;
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                resultado = diaUtil;
+                break;
         }
         System.out.println(resultado);
     }
