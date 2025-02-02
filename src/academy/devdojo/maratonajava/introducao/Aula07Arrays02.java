@@ -13,7 +13,7 @@ public class Aula07Arrays02 {
         nomes[2] = "Corvette";
         nomes[3] = "Fiat Uno";
 
-        for (int i = 0; i < numeroArray ; i++) {
+        for (int i = 0; i < nomes.length ; i++) {
             System.out.println(nomes[i]);
 
         }
