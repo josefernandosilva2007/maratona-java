@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula08ArraysMultidimensionais {
+public class Aula08ArraysMultidimensionais01 {
     public static void main(String[] args) {
         int[][] dias = new int[3][3];
         dias[0][0]=  31;
@@ -19,5 +19,12 @@ public class Aula08ArraysMultidimensionais {
 
         }
 
+
+        System.out.println("==========================");
+        for(int[] arrBase:dias){
+            for(int num: arrBase){
+                System.out.println(num);
+            }
+        }
     }
 }
