@@ -17,3 +17,9 @@
 
 - Eh um Array de Array
  ![img_2.png](img_2.png)
+
+### Coesao
+
+- Nao posso usar um psvm em uma classe exemplo na classe "Personagem"
+- Nao posso usar duas classes diferentes em um dominio
+- Um proposito por Classe
