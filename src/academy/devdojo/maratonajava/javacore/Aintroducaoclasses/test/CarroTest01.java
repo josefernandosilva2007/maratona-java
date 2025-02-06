@@ -15,6 +15,10 @@ public class CarroTest01 {
         carro2.marca = "Fiat";
         carro2.ano = 2000;
 
+        //referencia de objeto
+        carro = carro2;
+        //agora o carro1 vai imprimir o mesmo valor que o carro 2
+
         System.out.println("----Primeiro carro-----");
         System.out.println( "Name: "  +carro.name);
         System.out.println(  "Marca: " +carro.marca);
