@@ -19,4 +19,11 @@ public class Calculadora {
         }
         return n1/n2;
     }
+
+    public void alteraDoisNumeros(int n1, int n2) {
+
+        System.out.println("N1 " + n1);
+        System.out.println("N2 " + n2);
+
+    }
 }

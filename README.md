@@ -23,3 +23,6 @@
 - Nao posso usar um psvm em uma classe exemplo na classe "Personagem"
 - Nao posso usar duas classes diferentes em um dominio
 - Um proposito por Classe
+
+
+#### break de um void eh  "return;"
