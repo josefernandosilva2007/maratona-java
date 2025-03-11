@@ -1,28 +1,83 @@
 
-## *Oi, eu sou o José!*
+# Maratona-Java
 
-### Git Coventional Commits
-![img.png](img.png)
-### Java Compiler
-![img_1.png](img_1.png)
- 
+Este é um repositorio para documentar meus estudos de Java usando o curso [[[Maratona Java Virado no Jiraya - YouTube](https://www.youtube.com/playlist?list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW)]] do DevDojo
+
+## O que é o Java
+
+Java é uma linguagem de programação, onde uma vez desenvolvido irá ser executado em qualquer lugar através da JVM (Java Virtual Machine)
+
+![img.png](image/img.png)
+## Git Coventional Commits
+![img_1.png](image/img_1.png)
+## Arrays
+
+É uma estrutura de dados que armazena vários valores em uma unica variavel
+### Formas de criar uma array de inteiros
+`int[] nums = new int[3]{1, 2 , 3}`
+`int[] nums = {1, 2, 3}`
+`int[] nums = new int[]{1, 2 , 3}`
+
+
+### For
+
+O Loop For é utilizado para iterar partes do código sem a necessidade de reescrevê-las manualmente
+
+#### Exemplo de for para escrever cada posição em um Array
+
+![img_2.png](image/img_2.png)
+
+
 ### Foreach
 
 - Nao da pra acessar o indice do array
 - Versao simplificada do for i
 - Percorre cada uma das posicoes do array
 - Nao precisa se preocupar com o tamanho do array
- 
+
+#### Exemplo de Foreach
+
+![img_3.png](image/img_3.png)
+
 ### Arrays Multidimensionais
 
-- Eh um Array de Array
- ![img_2.png](img_2.png)
+Um Array multidimensional é uma estrutura de dados que armazena dados em múltiplas dimensões
 
-### Coesao
+![img_4.png](image/img_4.png)
 
-- Nao posso usar um psvm em uma classe exemplo na classe "Personagem"
-- Nao posso usar duas classes diferentes em um dominio
-- Um proposito por Classe
+## Herança
+
+É uma técnica de programação que permite criar classes com base em outras classes já existentes. A classe que herda é chamada de subclasse, enquanto a classe que é herdada é chamada de superclasse.
+![img_5.png](image/img_5.png)
+- Pessoa = superclasse
+- Funcionario = subclasse
+
+## Polimorfismo
+
+Polimorfismo em Java é a capacidade de um objeto assumir diferentes formas. Isso significa que objetos de diferentes classes podem ser tratados de maneira uniforme
+O polimorfismo é alcançado por meio de herança, interfaces e métodos virtuais.
+
+## Errors e Exceptions
+
+- Throwable significa lançado
+- Quando é um Error é uma subclasse de Erro
+- Um Exception é uma excessao
+- ![img_6.png](image/img_6.png)
+### Exceptions
+Tem Exceptions checked e unchecked. Excessoes Checked sao filhas da classe Exception diretamente; As Uncheckeds  é a classe RuntimeException e suas filhas
+### RuntimeException
+
+É um excessão que vai ocorrer durante a execução
+São excessões que voce desenvolveu errado ou nao fez uma tratativa
+
+### Capturando Multiplas Exceções
+
+![img.png](image/img7.png)
+- O Java sempre ira escolher a que se adequar melhor aquela exceçao
+- Colocar a exceçao mais generica por ultimo
+- Não é comum ver tantos catch
+- Funciona em filhas da classe Exception
+![img.png](image/img8.png)
 
 
-#### break de um void eh  "return;"
+
