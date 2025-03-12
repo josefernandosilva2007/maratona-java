@@ -79,5 +79,32 @@ São excessões que voce desenvolveu errado ou nao fez uma tratativa
 - Funciona em filhas da classe Exception
 ![img.png](image/img8.png)
 
+### Capturando Multiplas Exceções
+
+
+- O Java sempre ira escolher a que se adequar melhor aquela exceçao
+- Colocar a exceçao mais generica por ultimo
+- Não é comum ver tantos catch
+- Funciona em filhas da classe Exceptions
+
+
+### Try with Resources
+
+- So pode ser feita com objetos que implementa as interfaces `AutoCloseable` ou `Closeable`
+- Sua Sintaxe![img.png](image/img9.png)
+- Posso usar o try sem o catch e o finally mas eu tenho que jogar o Throws no metodo
+- COM O CATCH ![img.png](image/img9.png)
+- SEM O CATCH![img.png](image/img10.png)
+- Posso Criar quantas variaveis quiser contato que implementem o`Closeable`
+- ![img.png](image/img11.png)
+- O java fecha na ordem Inversa do que foi declarado
+- ![img.png](image/img12.png)
+
+###  Exceção customizada
+
+- Todas Excecoes terminam com Exception no final
+- extends Exceptions(caso for checked) e RuntimeException(caso for unchecked)
+- ![img.png](image/img13.png)
+
 
 
