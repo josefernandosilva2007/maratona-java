@@ -106,5 +106,19 @@ São excessões que voce desenvolveu errado ou nao fez uma tratativa
 - extends Exceptions(caso for checked) e RuntimeException(caso for unchecked)
 - ![img.png](image/img13.png)
 
+## Wrappers
 
+Um dos motivos que o java criou os Wrapper foi para passar os valores por referencia e nao mais por valor.  A colecao de dados so trabalha com Wrappers. So usar wrapper quando for preciso
+
+### Autoboxing
+
+é um recurso da linguagem Java que permite a conversão automática de tipos primitivos de dados para objetos de classe wrapper
+
+- Java converte automaticamente o tipo primitivo em Wrapper
+
+### Unboxing
+
+é uma operação de programação que converte um tipo de dado primitivo em um objeto de classe wrapper
+
+- Converte o wrapper em tipo primitivo
 
