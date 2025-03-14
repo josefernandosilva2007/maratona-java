@@ -122,3 +122,8 @@ Um dos motivos que o java criou os Wrapper foi para passar os valores por refere
 
 - Converte o wrapper em tipo primitivo
 
+## String
+
+- No Java as Strings sao imutaveis
+![img.png](image/img14.png)
+- ![img.png](image/img15.png)
