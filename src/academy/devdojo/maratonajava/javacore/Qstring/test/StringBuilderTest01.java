@@ -12,6 +12,8 @@ public class StringBuilderTest01 {
         sb.reverse();
         sb.delete(0,2);
 
+
+
         System.out.println(sb);
     }
 }
