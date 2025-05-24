@@ -23,7 +23,7 @@ class ListJavaFiles extends SimpleFileVisitor<Path> {
 
 public class SimpleFileVisitorTest01 {
     public static void main(String[] args) throws IOException {
-        ListAllFiles list = new ListAllFiles();
+        ListJavaFiles list = new ListJavaFiles();
 
 
         Path path = Paths.get(".");
