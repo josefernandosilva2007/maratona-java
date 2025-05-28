@@ -1,21 +1,22 @@
 package academy.devdojo.maratonajava.javacore.ZZAclassesinternas.test;
 
 
-class Animal{
-    void walk(){
-        System.out.println("Animal Walking");
-    }
-}
+import academy.devdojo.maratonajava.javacore.Zgenerics.domain.Barco;
 
-public class AnonymousClassesTest01 {
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class AnonymousClassesTest02 {
     public static void main(String[] args) {
-        Animal animal = new Animal(){
+        List<Barco> barcoList = new ArrayList<>( List.of(new Barco("Lancha"), new Barco("Iate")));
+        barcoList.sort(new Comparator<Barco>() {
             @Override
-            void walk() {
-                System.out.println("Woof Woof");
+            public int compare(Barco o1, Barco o2) {
+                return o1.getName().compareTo(o2.getName());
             }
-        };
-        
-        animal.walk();
+        });
+
+        System.out.println(barcoList);
     }
 }
