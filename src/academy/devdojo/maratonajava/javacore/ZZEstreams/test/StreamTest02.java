@@ -1,0 +1,31 @@
+package academy.devdojo.maratonajava.javacore.ZZEstreams.test;
+
+import academy.devdojo.maratonajava.javacore.ZZEstreams.domain.LightNovel;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamTest02 {
+    private static final List<LightNovel> listNovels = new ArrayList<>( List.of(
+            new LightNovel("Fullmetal Alchemist", 200),
+            new LightNovel("Re:Zero", 500),
+            new LightNovel("Naruto: The Last", 399),
+            new LightNovel("No Game No Life", 400),
+            new LightNovel("Overlord", 300),
+            new LightNovel("Bunny Girl Senpai", 700),
+            new LightNovel("Monogatari", 250)
+    ));
+
+    public static void main(String[] args) {
+        List<String> titles = listNovels.stream()
+                .sorted(Comparator.comparing(LightNovel::getTitle))
+                .filter(ln -> ln.getPrice() <= 400)
+                .limit(3)
+                .map(LightNovel::getTitle)
+                .collect(Collectors.toList());
+
+        System.out.println(titles);
+    }
+}
