@@ -10,7 +10,6 @@ public class ConnectionFactoryTest03 {
         Producer p1 = Producer.builder().name("Toei").build();
         Producer p2 = Producer.builder().name("Wit").build();
         Producer p3 = Producer.builder().name("White Fox").build();
-
         ProducerService.saveTransaction(List.of(p1,p2,p3));
     }
 }

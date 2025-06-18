@@ -12,7 +12,7 @@ public class ConnectionFactory {
     public static Connection getConnection(){
         String url = "jdbc:mysql://localhost:3306/anime_store";
         String user = "root";
-        String password = "Jo05012007@";
+        String password = "root";
         try {
            return DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
@@ -22,7 +22,7 @@ public class ConnectionFactory {
     public static JdbcRowSet getJdbcRowSet() throws SQLException {
         String url = "jdbc:mysql://localhost:3306/anime_store";
         String user = "root";
-        String password = "Jo05012007@";
+        String password = "root";
         JdbcRowSet jdbcRowSet = RowSetProvider.newFactory().createJdbcRowSet();
         jdbcRowSet.setUrl(url);
         jdbcRowSet.setUsername(user);
